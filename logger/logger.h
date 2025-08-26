@@ -7,43 +7,45 @@
 #include <chrono>
 #include <mutex>
 
-enum class LogLevel {Regular, Warning, Error};
-
-struct ILogSink
+enum class Level
 {
-    virtual ~ILogSink() = default;
-    virtual bool write(LogLevel level, const std::string& msg, const std::string & timestamp) = 0;
+    Regular = 0,
+    Warning = 1,
+    Sanction = 2
 };
 
-
-class FileLogSink : public ILogSink 
+struct outDevice
 {
-    public:
-    explicit FileLogSink(const std::string & filename);
-    bool write(LogLevel level, const std::string & msg, const std::string & timestamp) override;
+    virtual ~outDevice() = default;
+    virtual bool write(Level level, const std::string &msg, const std::string &timestamp) = 0;
+};
 
+class outFile : public outDevice
+{
+public:
+    explicit outFile(const std::string &filename);
+    bool write(Level level, const std::string &msg, const std::string &timestamp) override;
 
-
-    private:
+private:
+    //output
     std::ofstream out_;
-    static std::string toString(LogLevel lvl);
+    static std::string toString(Level lvl);
 };
 
 class Logger
 {
-    public:
-    Logger(std::unique_ptr<ILogSink> sink, LogLevel level);
-    
-    bool log(const std::string & msg, LogLevel level);
-    void setLevel(LogLevel level);
-    LogLevel getLevel() const;
+public:
+    Logger(std::unique_ptr<outDevice> device, Level level);
 
-    private:
-    std::unique_ptr<ILogSink> sink_;
-    LogLevel threshold_;
+    bool log(const std::string &msg, Level level);
+    void setLevel(Level level);
+    Level getLevel() const;
+    std::string getStrLevel();
+
+private:
+    std::unique_ptr<outDevice> device_;
+    Level threshold_;
     mutable std::mutex m_;
 
     static std::string currentTime();
-
-
 };

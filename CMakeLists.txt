@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 4.0.3)
-project(Testtask CXX)
+project(Testtask LANGUAGES CXX)
 
 # include(cTest)
 # enable_testing()
