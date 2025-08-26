@@ -1,5 +1,6 @@
 ## Сборка
 ```bash
+delete folder build
 mkdir build && cd build
 cmake ..
 make
