@@ -42,228 +42,6 @@ include CMakeFiles/rules.ninja
 cmake_ninja_workdir = D$:/devcplus/testtask1/build/
 
 #############################################
-# Utility command for Experimental
-
-build Experimental: phony CMakeFiles/Experimental
-
-
-#############################################
-# Utility command for Nightly
-
-build Nightly: phony CMakeFiles/Nightly
-
-
-#############################################
-# Utility command for Continuous
-
-build Continuous: phony CMakeFiles/Continuous
-
-
-#############################################
-# Utility command for NightlyMemoryCheck
-
-build NightlyMemoryCheck: phony CMakeFiles/NightlyMemoryCheck
-
-
-#############################################
-# Utility command for NightlyStart
-
-build NightlyStart: phony CMakeFiles/NightlyStart
-
-
-#############################################
-# Utility command for NightlyUpdate
-
-build NightlyUpdate: phony CMakeFiles/NightlyUpdate
-
-
-#############################################
-# Utility command for NightlyConfigure
-
-build NightlyConfigure: phony CMakeFiles/NightlyConfigure
-
-
-#############################################
-# Utility command for NightlyBuild
-
-build NightlyBuild: phony CMakeFiles/NightlyBuild
-
-
-#############################################
-# Utility command for NightlyTest
-
-build NightlyTest: phony CMakeFiles/NightlyTest
-
-
-#############################################
-# Utility command for NightlyCoverage
-
-build NightlyCoverage: phony CMakeFiles/NightlyCoverage
-
-
-#############################################
-# Utility command for NightlyMemCheck
-
-build NightlyMemCheck: phony CMakeFiles/NightlyMemCheck
-
-
-#############################################
-# Utility command for NightlySubmit
-
-build NightlySubmit: phony CMakeFiles/NightlySubmit
-
-
-#############################################
-# Utility command for ExperimentalStart
-
-build ExperimentalStart: phony CMakeFiles/ExperimentalStart
-
-
-#############################################
-# Utility command for ExperimentalUpdate
-
-build ExperimentalUpdate: phony CMakeFiles/ExperimentalUpdate
-
-
-#############################################
-# Utility command for ExperimentalConfigure
-
-build ExperimentalConfigure: phony CMakeFiles/ExperimentalConfigure
-
-
-#############################################
-# Utility command for ExperimentalBuild
-
-build ExperimentalBuild: phony CMakeFiles/ExperimentalBuild
-
-
-#############################################
-# Utility command for ExperimentalTest
-
-build ExperimentalTest: phony CMakeFiles/ExperimentalTest
-
-
-#############################################
-# Utility command for ExperimentalCoverage
-
-build ExperimentalCoverage: phony CMakeFiles/ExperimentalCoverage
-
-
-#############################################
-# Utility command for ExperimentalMemCheck
-
-build ExperimentalMemCheck: phony CMakeFiles/ExperimentalMemCheck
-
-
-#############################################
-# Utility command for ExperimentalSubmit
-
-build ExperimentalSubmit: phony CMakeFiles/ExperimentalSubmit
-
-
-#############################################
-# Utility command for ContinuousStart
-
-build ContinuousStart: phony CMakeFiles/ContinuousStart
-
-
-#############################################
-# Utility command for ContinuousUpdate
-
-build ContinuousUpdate: phony CMakeFiles/ContinuousUpdate
-
-
-#############################################
-# Utility command for ContinuousConfigure
-
-build ContinuousConfigure: phony CMakeFiles/ContinuousConfigure
-
-
-#############################################
-# Utility command for ContinuousBuild
-
-build ContinuousBuild: phony CMakeFiles/ContinuousBuild
-
-
-#############################################
-# Utility command for ContinuousTest
-
-build ContinuousTest: phony CMakeFiles/ContinuousTest
-
-
-#############################################
-# Utility command for ContinuousCoverage
-
-build ContinuousCoverage: phony CMakeFiles/ContinuousCoverage
-
-
-#############################################
-# Utility command for ContinuousMemCheck
-
-build ContinuousMemCheck: phony CMakeFiles/ContinuousMemCheck
-
-
-#############################################
-# Utility command for ContinuousSubmit
-
-build ContinuousSubmit: phony CMakeFiles/ContinuousSubmit
-
-# =============================================================================
-# Object build statements for EXECUTABLE target Testtask
-
-
-#############################################
-# Order-only phony target for Testtask
-
-build cmake_object_order_depends_target_Testtask: phony || .
-
-build CMakeFiles/Testtask.dir/main.cpp.obj: CXX_COMPILER__Testtask_unscanned_Release D$:/devcplus/testtask1/main.cpp || cmake_object_order_depends_target_Testtask
-  CONFIG = Release
-  DEP_FILE = CMakeFiles\Testtask.dir\main.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG
-  OBJECT_DIR = CMakeFiles\Testtask.dir
-  OBJECT_FILE_DIR = CMakeFiles\Testtask.dir
-
-build CMakeFiles/Testtask.dir/library.cpp.obj: CXX_COMPILER__Testtask_unscanned_Release D$:/devcplus/testtask1/library.cpp || cmake_object_order_depends_target_Testtask
-  CONFIG = Release
-  DEP_FILE = CMakeFiles\Testtask.dir\library.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG
-  OBJECT_DIR = CMakeFiles\Testtask.dir
-  OBJECT_FILE_DIR = CMakeFiles\Testtask.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target Testtask
-
-
-#############################################
-# Link the executable Testtask.exe
-
-build Testtask.exe: CXX_EXECUTABLE_LINKER__Testtask_Release CMakeFiles/Testtask.dir/main.cpp.obj CMakeFiles/Testtask.dir/library.cpp.obj
-  CONFIG = Release
-  FLAGS = -O3 -DNDEBUG
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\Testtask.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = Testtask.exe
-  TARGET_IMPLIB = libTesttask.dll.a
-  TARGET_PDB = Testtask.exe.dbg
-
-
-#############################################
-# Utility command for test
-
-build CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\devcplus\testtask1\build && "C:\Program Files\CMake\bin\ctest.exe" "
-  DESC = Running tests...
-  pool = console
-  restat = 1
-
-build test: phony CMakeFiles/test.util
-
-
-#############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
@@ -286,234 +64,187 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# D:/devcplus/testtask1/CMakeLists.txt
+# =============================================================================
 
-#############################################
-# Custom command for CMakeFiles\Experimental
-
-build CMakeFiles/Experimental | ${cmake_ninja_workdir}CMakeFiles/Experimental: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\devcplus\testtask1\build && "C:\Program Files\CMake\bin\ctest.exe" -DMODEL=Experimental -S CMakeFiles/CTestScript.cmake -V"
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles\Nightly
-
-build CMakeFiles/Nightly | ${cmake_ninja_workdir}CMakeFiles/Nightly: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\devcplus\testtask1\build && "C:\Program Files\CMake\bin\ctest.exe" -DMODEL=Nightly -S CMakeFiles/CTestScript.cmake -V"
-  pool = console
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target logger_static
 
 
 #############################################
-# Custom command for CMakeFiles\Continuous
+# Order-only phony target for logger_static
 
-build CMakeFiles/Continuous | ${cmake_ninja_workdir}CMakeFiles/Continuous: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\devcplus\testtask1\build && "C:\Program Files\CMake\bin\ctest.exe" -DMODEL=Continuous -S CMakeFiles/CTestScript.cmake -V"
-  pool = console
+build cmake_object_order_depends_target_logger_static: phony || .
 
-
-#############################################
-# Custom command for CMakeFiles\NightlyMemoryCheck
-
-build CMakeFiles/NightlyMemoryCheck | ${cmake_ninja_workdir}CMakeFiles/NightlyMemoryCheck: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\devcplus\testtask1\build && "C:\Program Files\CMake\bin\ctest.exe" -DMODEL=NightlyMemoryCheck -S CMakeFiles/CTestScript.cmake -V"
-  pool = console
+build logger/CMakeFiles/logger_static.dir/logger.cpp.obj: CXX_COMPILER__logger_static_unscanned_Release D$:/devcplus/testtask1/logger/logger.cpp || cmake_object_order_depends_target_logger_static
+  CONFIG = Release
+  DEP_FILE = logger\CMakeFiles\logger_static.dir\logger.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG
+  INCLUDES = -ID:/devcplus/testtask1/logger
+  OBJECT_DIR = logger\CMakeFiles\logger_static.dir
+  OBJECT_FILE_DIR = logger\CMakeFiles\logger_static.dir
 
 
-#############################################
-# Custom command for CMakeFiles\NightlyStart
-
-build CMakeFiles/NightlyStart | ${cmake_ninja_workdir}CMakeFiles/NightlyStart: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\devcplus\testtask1\build && "C:\Program Files\CMake\bin\ctest.exe" -DMODEL=Nightly -DACTIONS=Start -S CMakeFiles/CTestScript.cmake -V"
-  pool = console
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target logger_static
 
 
 #############################################
-# Custom command for CMakeFiles\NightlyUpdate
+# Link the static library logger\liblogger_static.a
 
-build CMakeFiles/NightlyUpdate | ${cmake_ninja_workdir}CMakeFiles/NightlyUpdate: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\devcplus\testtask1\build && "C:\Program Files\CMake\bin\ctest.exe" -DMODEL=Nightly -DACTIONS=Update -S CMakeFiles/CTestScript.cmake -V"
-  pool = console
+build logger/liblogger_static.a: CXX_STATIC_LIBRARY_LINKER__logger_static_Release logger/CMakeFiles/logger_static.dir/logger.cpp.obj
+  CONFIG = Release
+  LANGUAGE_COMPILE_FLAGS = -O3 -DNDEBUG
+  OBJECT_DIR = logger\CMakeFiles\logger_static.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = logger\liblogger_static.a
+  TARGET_PDB = logger_static.a.dbg
 
-
-#############################################
-# Custom command for CMakeFiles\NightlyConfigure
-
-build CMakeFiles/NightlyConfigure | ${cmake_ninja_workdir}CMakeFiles/NightlyConfigure: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\devcplus\testtask1\build && "C:\Program Files\CMake\bin\ctest.exe" -DMODEL=Nightly -DACTIONS=Configure -S CMakeFiles/CTestScript.cmake -V"
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles\NightlyBuild
-
-build CMakeFiles/NightlyBuild | ${cmake_ninja_workdir}CMakeFiles/NightlyBuild: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\devcplus\testtask1\build && "C:\Program Files\CMake\bin\ctest.exe" -DMODEL=Nightly -DACTIONS=Build -S CMakeFiles/CTestScript.cmake -V"
-  pool = console
+# =============================================================================
+# Object build statements for SHARED_LIBRARY target logger_shared
 
 
 #############################################
-# Custom command for CMakeFiles\NightlyTest
+# Order-only phony target for logger_shared
 
-build CMakeFiles/NightlyTest | ${cmake_ninja_workdir}CMakeFiles/NightlyTest: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\devcplus\testtask1\build && "C:\Program Files\CMake\bin\ctest.exe" -DMODEL=Nightly -DACTIONS=Test -S CMakeFiles/CTestScript.cmake -V"
-  pool = console
+build cmake_object_order_depends_target_logger_shared: phony || .
+
+build logger/CMakeFiles/logger_shared.dir/logger.cpp.obj: CXX_COMPILER__logger_shared_unscanned_Release D$:/devcplus/testtask1/logger/logger.cpp || cmake_object_order_depends_target_logger_shared
+  CONFIG = Release
+  DEFINES = -Dlogger_shared_EXPORTS
+  DEP_FILE = logger\CMakeFiles\logger_shared.dir\logger.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG
+  INCLUDES = -ID:/devcplus/testtask1/logger
+  OBJECT_DIR = logger\CMakeFiles\logger_shared.dir
+  OBJECT_FILE_DIR = logger\CMakeFiles\logger_shared.dir
 
 
-#############################################
-# Custom command for CMakeFiles\NightlyCoverage
-
-build CMakeFiles/NightlyCoverage | ${cmake_ninja_workdir}CMakeFiles/NightlyCoverage: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\devcplus\testtask1\build && "C:\Program Files\CMake\bin\ctest.exe" -DMODEL=Nightly -DACTIONS=Coverage -S CMakeFiles/CTestScript.cmake -V"
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles\NightlyMemCheck
-
-build CMakeFiles/NightlyMemCheck | ${cmake_ninja_workdir}CMakeFiles/NightlyMemCheck: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\devcplus\testtask1\build && "C:\Program Files\CMake\bin\ctest.exe" -DMODEL=Nightly -DACTIONS=MemCheck -S CMakeFiles/CTestScript.cmake -V"
-  pool = console
+# =============================================================================
+# Link build statements for SHARED_LIBRARY target logger_shared
 
 
 #############################################
-# Custom command for CMakeFiles\NightlySubmit
+# Link the shared library logger\liblogger_shared.dll
 
-build CMakeFiles/NightlySubmit | ${cmake_ninja_workdir}CMakeFiles/NightlySubmit: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\devcplus\testtask1\build && "C:\Program Files\CMake\bin\ctest.exe" -DMODEL=Nightly -DACTIONS=Submit -S CMakeFiles/CTestScript.cmake -V"
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles\ExperimentalStart
-
-build CMakeFiles/ExperimentalStart | ${cmake_ninja_workdir}CMakeFiles/ExperimentalStart: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\devcplus\testtask1\build && "C:\Program Files\CMake\bin\ctest.exe" -DMODEL=Experimental -DACTIONS=Start -S CMakeFiles/CTestScript.cmake -V"
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles\ExperimentalUpdate
-
-build CMakeFiles/ExperimentalUpdate | ${cmake_ninja_workdir}CMakeFiles/ExperimentalUpdate: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\devcplus\testtask1\build && "C:\Program Files\CMake\bin\ctest.exe" -DMODEL=Experimental -DACTIONS=Update -S CMakeFiles/CTestScript.cmake -V"
-  pool = console
+build logger/liblogger_shared.dll logger/liblogger_shared.dll.a: CXX_SHARED_LIBRARY_LINKER__logger_shared_Release logger/CMakeFiles/logger_shared.dir/logger.cpp.obj
+  CONFIG = Release
+  LANGUAGE_COMPILE_FLAGS = -O3 -DNDEBUG
+  LINK_FLAGS = -shared
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = logger\CMakeFiles\logger_shared.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  RESTAT = 1
+  TARGET_FILE = logger\liblogger_shared.dll
+  TARGET_IMPLIB = logger\liblogger_shared.dll.a
+  TARGET_PDB = logger_shared.dll.dbg
 
 
 #############################################
-# Custom command for CMakeFiles\ExperimentalConfigure
+# Utility command for edit_cache
 
-build CMakeFiles/ExperimentalConfigure | ${cmake_ninja_workdir}CMakeFiles/ExperimentalConfigure: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\devcplus\testtask1\build && "C:\Program Files\CMake\bin\ctest.exe" -DMODEL=Experimental -DACTIONS=Configure -S CMakeFiles/CTestScript.cmake -V"
+build logger/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\devcplus\testtask1\build\logger && "C:\Program Files\CMake\bin\cmake-gui.exe" -SD:\devcplus\testtask1 -BD:\devcplus\testtask1\build"
+  DESC = Running CMake cache editor...
   pool = console
+  restat = 1
+
+build logger/edit_cache: phony logger/CMakeFiles/edit_cache.util
 
 
 #############################################
-# Custom command for CMakeFiles\ExperimentalBuild
+# Utility command for rebuild_cache
 
-build CMakeFiles/ExperimentalBuild | ${cmake_ninja_workdir}CMakeFiles/ExperimentalBuild: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\devcplus\testtask1\build && "C:\Program Files\CMake\bin\ctest.exe" -DMODEL=Experimental -DACTIONS=Build -S CMakeFiles/CTestScript.cmake -V"
+build logger/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\devcplus\testtask1\build\logger && "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -SD:\devcplus\testtask1 -BD:\devcplus\testtask1\build"
+  DESC = Running CMake to regenerate build system...
   pool = console
+  restat = 1
+
+build logger/rebuild_cache: phony logger/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# D:/devcplus/testtask1/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target app
 
 
 #############################################
-# Custom command for CMakeFiles\ExperimentalTest
+# Order-only phony target for app
 
-build CMakeFiles/ExperimentalTest | ${cmake_ninja_workdir}CMakeFiles/ExperimentalTest: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\devcplus\testtask1\build && "C:\Program Files\CMake\bin\ctest.exe" -DMODEL=Experimental -DACTIONS=Test -S CMakeFiles/CTestScript.cmake -V"
-  pool = console
+build cmake_object_order_depends_target_app: phony || cmake_object_order_depends_target_logger_static
 
-
-#############################################
-# Custom command for CMakeFiles\ExperimentalCoverage
-
-build CMakeFiles/ExperimentalCoverage | ${cmake_ninja_workdir}CMakeFiles/ExperimentalCoverage: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\devcplus\testtask1\build && "C:\Program Files\CMake\bin\ctest.exe" -DMODEL=Experimental -DACTIONS=Coverage -S CMakeFiles/CTestScript.cmake -V"
-  pool = console
+build app/CMakeFiles/app.dir/main.cpp.obj: CXX_COMPILER__app_unscanned_Release D$:/devcplus/testtask1/app/main.cpp || cmake_object_order_depends_target_app
+  CONFIG = Release
+  DEP_FILE = app\CMakeFiles\app.dir\main.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG
+  INCLUDES = -ID:/devcplus/testtask1/logger
+  OBJECT_DIR = app\CMakeFiles\app.dir
+  OBJECT_FILE_DIR = app\CMakeFiles\app.dir
 
 
-#############################################
-# Custom command for CMakeFiles\ExperimentalMemCheck
-
-build CMakeFiles/ExperimentalMemCheck | ${cmake_ninja_workdir}CMakeFiles/ExperimentalMemCheck: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\devcplus\testtask1\build && "C:\Program Files\CMake\bin\ctest.exe" -DMODEL=Experimental -DACTIONS=MemCheck -S CMakeFiles/CTestScript.cmake -V"
-  pool = console
+# =============================================================================
+# Link build statements for EXECUTABLE target app
 
 
 #############################################
-# Custom command for CMakeFiles\ExperimentalSubmit
+# Link the executable app\app.exe
 
-build CMakeFiles/ExperimentalSubmit | ${cmake_ninja_workdir}CMakeFiles/ExperimentalSubmit: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\devcplus\testtask1\build && "C:\Program Files\CMake\bin\ctest.exe" -DMODEL=Experimental -DACTIONS=Submit -S CMakeFiles/CTestScript.cmake -V"
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles\ContinuousStart
-
-build CMakeFiles/ContinuousStart | ${cmake_ninja_workdir}CMakeFiles/ContinuousStart: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\devcplus\testtask1\build && "C:\Program Files\CMake\bin\ctest.exe" -DMODEL=Continuous -DACTIONS=Start -S CMakeFiles/CTestScript.cmake -V"
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles\ContinuousUpdate
-
-build CMakeFiles/ContinuousUpdate | ${cmake_ninja_workdir}CMakeFiles/ContinuousUpdate: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\devcplus\testtask1\build && "C:\Program Files\CMake\bin\ctest.exe" -DMODEL=Continuous -DACTIONS=Update -S CMakeFiles/CTestScript.cmake -V"
-  pool = console
+build app/app.exe: CXX_EXECUTABLE_LINKER__app_Release app/CMakeFiles/app.dir/main.cpp.obj | logger/liblogger_static.a || logger/liblogger_static.a
+  CONFIG = Release
+  FLAGS = -O3 -DNDEBUG
+  LINK_LIBRARIES = logger/liblogger_static.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = app\CMakeFiles\app.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = app\app.exe
+  TARGET_IMPLIB = app\libapp.dll.a
+  TARGET_PDB = app.exe.dbg
 
 
 #############################################
-# Custom command for CMakeFiles\ContinuousConfigure
+# Utility command for edit_cache
 
-build CMakeFiles/ContinuousConfigure | ${cmake_ninja_workdir}CMakeFiles/ContinuousConfigure: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\devcplus\testtask1\build && "C:\Program Files\CMake\bin\ctest.exe" -DMODEL=Continuous -DACTIONS=Configure -S CMakeFiles/CTestScript.cmake -V"
+build app/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\devcplus\testtask1\build\app && "C:\Program Files\CMake\bin\cmake-gui.exe" -SD:\devcplus\testtask1 -BD:\devcplus\testtask1\build"
+  DESC = Running CMake cache editor...
   pool = console
+  restat = 1
+
+build app/edit_cache: phony app/CMakeFiles/edit_cache.util
 
 
 #############################################
-# Custom command for CMakeFiles\ContinuousBuild
+# Utility command for rebuild_cache
 
-build CMakeFiles/ContinuousBuild | ${cmake_ninja_workdir}CMakeFiles/ContinuousBuild: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\devcplus\testtask1\build && "C:\Program Files\CMake\bin\ctest.exe" -DMODEL=Continuous -DACTIONS=Build -S CMakeFiles/CTestScript.cmake -V"
+build app/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\devcplus\testtask1\build\app && "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -SD:\devcplus\testtask1 -BD:\devcplus\testtask1\build"
+  DESC = Running CMake to regenerate build system...
   pool = console
+  restat = 1
 
-
-#############################################
-# Custom command for CMakeFiles\ContinuousTest
-
-build CMakeFiles/ContinuousTest | ${cmake_ninja_workdir}CMakeFiles/ContinuousTest: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\devcplus\testtask1\build && "C:\Program Files\CMake\bin\ctest.exe" -DMODEL=Continuous -DACTIONS=Test -S CMakeFiles/CTestScript.cmake -V"
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles\ContinuousCoverage
-
-build CMakeFiles/ContinuousCoverage | ${cmake_ninja_workdir}CMakeFiles/ContinuousCoverage: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\devcplus\testtask1\build && "C:\Program Files\CMake\bin\ctest.exe" -DMODEL=Continuous -DACTIONS=Coverage -S CMakeFiles/CTestScript.cmake -V"
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles\ContinuousMemCheck
-
-build CMakeFiles/ContinuousMemCheck | ${cmake_ninja_workdir}CMakeFiles/ContinuousMemCheck: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\devcplus\testtask1\build && "C:\Program Files\CMake\bin\ctest.exe" -DMODEL=Continuous -DACTIONS=MemCheck -S CMakeFiles/CTestScript.cmake -V"
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles\ContinuousSubmit
-
-build CMakeFiles/ContinuousSubmit | ${cmake_ninja_workdir}CMakeFiles/ContinuousSubmit: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\devcplus\testtask1\build && "C:\Program Files\CMake\bin\ctest.exe" -DMODEL=Continuous -DACTIONS=Submit -S CMakeFiles/CTestScript.cmake -V"
-  pool = console
+build app/rebuild_cache: phony app/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
 # Target aliases.
 
-build Testtask: phony Testtask.exe
+build app: phony app/app.exe
+
+build app.exe: phony app/app.exe
+
+build liblogger_shared.dll: phony logger/liblogger_shared.dll
+
+build liblogger_static.a: phony logger/liblogger_static.a
+
+build logger_shared: phony logger/liblogger_shared.dll
+
+build logger_static: phony logger/liblogger_static.a
 
 # =============================================================================
 # Folder targets.
@@ -523,14 +254,42 @@ build Testtask: phony Testtask.exe
 #############################################
 # Folder: D:/devcplus/testtask1/build
 
-build codegen: phony
+build codegen: phony logger/codegen app/codegen
+
+# =============================================================================
+
+#############################################
+# Folder: D:/devcplus/testtask1/build/app
+
+build app/codegen: phony
+
+# =============================================================================
+
+#############################################
+# Folder: D:/devcplus/testtask1/build/logger
+
+build logger/codegen: phony
 
 # =============================================================================
 
 #############################################
 # Folder: D:/devcplus/testtask1/build
 
-build all: phony Testtask.exe
+build all: phony logger/all app/all
+
+# =============================================================================
+
+#############################################
+# Folder: D:/devcplus/testtask1/build/app
+
+build app/all: phony app/app.exe
+
+# =============================================================================
+
+#############################################
+# Folder: D:/devcplus/testtask1/build/logger
+
+build logger/all: phony logger/liblogger_static.a logger/liblogger_shared.dll
 
 # =============================================================================
 # Built-in targets
@@ -539,14 +298,14 @@ build all: phony Testtask.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja D$:/devcplus/testtask1/build/cmake_install.cmake D$:/devcplus/testtask1/build/CTestTestfile.cmake: RERUN_CMAKE | C$:/Program$ Files/CMake/share/cmake-4.1/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/CTestTargets.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/CTestUseLaunchers.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/DartConfiguration.tcl.in C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Linker/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/cTest.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Templates/CTestScript.cmake.in CMakeCache.txt CMakeFiles/4.1.0-rc3/CMakeCXXCompiler.cmake CMakeFiles/4.1.0-rc3/CMakeRCCompiler.cmake CMakeFiles/4.1.0-rc3/CMakeSystem.cmake D$:/devcplus/testtask1/CMakeLists.txt
+build build.ninja D$:/devcplus/testtask1/build/cmake_install.cmake D$:/devcplus/testtask1/build/logger/cmake_install.cmake D$:/devcplus/testtask1/build/app/cmake_install.cmake: RERUN_CMAKE | C$:/Program$ Files/CMake/share/cmake-4.1/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Linker/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/4.1.0-rc3/CMakeCXXCompiler.cmake CMakeFiles/4.1.0-rc3/CMakeRCCompiler.cmake CMakeFiles/4.1.0-rc3/CMakeSystem.cmake D$:/devcplus/testtask1/CMakeLists.txt D$:/devcplus/testtask1/app/CMakeLists.txt D$:/devcplus/testtask1/logger/CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/CMake/share/cmake-4.1/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/CTestTargets.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/CTestUseLaunchers.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/DartConfiguration.tcl.in C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Linker/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/cTest.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Templates/CTestScript.cmake.in CMakeCache.txt CMakeFiles/4.1.0-rc3/CMakeCXXCompiler.cmake CMakeFiles/4.1.0-rc3/CMakeRCCompiler.cmake CMakeFiles/4.1.0-rc3/CMakeSystem.cmake D$:/devcplus/testtask1/CMakeLists.txt: phony
+build C$:/Program$ Files/CMake/share/cmake-4.1/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Linker/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-4.1/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/4.1.0-rc3/CMakeCXXCompiler.cmake CMakeFiles/4.1.0-rc3/CMakeRCCompiler.cmake CMakeFiles/4.1.0-rc3/CMakeSystem.cmake D$:/devcplus/testtask1/CMakeLists.txt D$:/devcplus/testtask1/app/CMakeLists.txt D$:/devcplus/testtask1/logger/CMakeLists.txt: phony
 
 
 #############################################

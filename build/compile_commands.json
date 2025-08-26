@@ -1,14 +1,20 @@
 [
 {
   "directory": "D:/devcplus/testtask1/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -O3 -DNDEBUG -o CMakeFiles\\Testtask.dir\\main.cpp.obj -c D:\\devcplus\\testtask1\\main.cpp",
-  "file": "D:/devcplus/testtask1/main.cpp",
-  "output": "D:/devcplus/testtask1/build/CMakeFiles/Testtask.dir/main.cpp.obj"
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -ID:/devcplus/testtask1/logger -O3 -DNDEBUG -o logger\\CMakeFiles\\logger_static.dir\\logger.cpp.obj -c D:\\devcplus\\testtask1\\logger\\logger.cpp",
+  "file": "D:/devcplus/testtask1/logger/logger.cpp",
+  "output": "D:/devcplus/testtask1/build/logger/CMakeFiles/logger_static.dir/logger.cpp.obj"
 },
 {
   "directory": "D:/devcplus/testtask1/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -O3 -DNDEBUG -o CMakeFiles\\Testtask.dir\\library.cpp.obj -c D:\\devcplus\\testtask1\\library.cpp",
-  "file": "D:/devcplus/testtask1/library.cpp",
-  "output": "D:/devcplus/testtask1/build/CMakeFiles/Testtask.dir/library.cpp.obj"
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -Dlogger_shared_EXPORTS -ID:/devcplus/testtask1/logger -O3 -DNDEBUG -o logger\\CMakeFiles\\logger_shared.dir\\logger.cpp.obj -c D:\\devcplus\\testtask1\\logger\\logger.cpp",
+  "file": "D:/devcplus/testtask1/logger/logger.cpp",
+  "output": "D:/devcplus/testtask1/build/logger/CMakeFiles/logger_shared.dir/logger.cpp.obj"
+},
+{
+  "directory": "D:/devcplus/testtask1/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -ID:/devcplus/testtask1/logger -O3 -DNDEBUG -o app\\CMakeFiles\\app.dir\\main.cpp.obj -c D:\\devcplus\\testtask1\\app\\main.cpp",
+  "file": "D:/devcplus/testtask1/app/main.cpp",
+  "output": "D:/devcplus/testtask1/build/app/CMakeFiles/app.dir/main.cpp.obj"
 }
 ]

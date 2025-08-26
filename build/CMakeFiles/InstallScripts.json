@@ -1,7 +1,9 @@
 {
 	"InstallScripts" : 
 	[
-		"D:/devcplus/testtask1/build/cmake_install.cmake"
+		"D:/devcplus/testtask1/build/cmake_install.cmake",
+		"D:/devcplus/testtask1/build/logger/cmake_install.cmake",
+		"D:/devcplus/testtask1/build/app/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

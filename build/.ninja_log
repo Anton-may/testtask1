@@ -1,4 +1,13 @@
 # ninja log v7
 570	28872	7776623505118735	CMakeFiles/Testtask.dir/library.cpp.obj	6610608c20ee1b7e
-379	28882	7776623503868774	CMakeFiles/Testtask.dir/main.cpp.obj	c85c0a3474ede12e
-28882	30935	7776623788260718	Testtask.exe	b20fb28fe6836454
+177	44354	7778903706576230	CMakeFiles/Testtask.dir/main.cpp.obj	c85c0a3474ede12e
+44355	49369	7778904148322944	Testtask.exe	b20fb28fe6836454
+50	8597	7779217260252335	build.ninja	3d0289be2a78a6cd
+50	8597	7779217259916497	D:/devcplus/testtask1/build/cmake_install.cmake	3d0289be2a78a6cd
+50	8597	7778917890775508	D:/devcplus/testtask1/build/CTestTestfile.cmake	3d0289be2a78a6cd
+37	11627	7779213023359827	logger/CMakeFiles/logger_static.dir/logger.cpp.obj	5270414ad0e5183f
+56	11679	7779213023531652	app/CMakeFiles/app.dir/main.cpp.obj	4cafb988c508f711
+11632	13156	7779213139316402	logger/liblogger_static.a	b9703c27338eb1ba
+13156	15394	7779213154543479	app/app.exe	a8daa7060038be33
+36	2111	7779213284721853	tests/CMakeFiles/tests.dir/test_logger.cpp.obj	2f0bf71bd3821955
+2112	2459	7779213305475945	tests/tests.exe	84f048a456f99936

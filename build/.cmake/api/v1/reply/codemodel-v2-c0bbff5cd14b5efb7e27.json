@@ -1,0 +1,110 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "4.0.3"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "logger",
+					"jsonFile" : "directory-logger-Release-540440305f9964810dc4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "4.0.3"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "logger",
+					"targetIndexes" : 
+					[
+						1,
+						2
+					]
+				},
+				{
+					"build" : "app",
+					"jsonFile" : "directory-app-Release-7ab44524cbd5ada90c6a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "4.0.3"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "app",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "Testtask",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "app::@5f5a17c01335469806cb",
+					"jsonFile" : "target-app-Release-d4c82f466e44b0cfb20a.json",
+					"name" : "app",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "logger_shared::@d605ba84040dd83ce0d4",
+					"jsonFile" : "target-logger_shared-Release-ecea7408a063dd0b6234.json",
+					"name" : "logger_shared",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "logger_static::@d605ba84040dd83ce0d4",
+					"jsonFile" : "target-logger_static-Release-f87acb52f735e00e8eca.json",
+					"name" : "logger_static",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/devcplus/testtask1/build",
+		"source" : "D:/devcplus/testtask1"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}
